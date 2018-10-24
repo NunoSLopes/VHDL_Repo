@@ -1,0 +1,34 @@
+Command line:
+   KeyDecodes_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50017
+
+Thu Oct 11 20:36:52 2018
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5173.93 Meg
+
+ Total Signals          : 92
+ Total Nets             : 57
+ Total Signal Drivers   : 32
+ Total Blocks           : 15
+ Total Primitive Blocks : 10
+ Total Processes        : 30
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 418
+Total Line Count : 62
+Total Line Count : 62
+Total Line Count : 62
+Total Line Count : 62
+Total Line Count : 62
+Total Line Count : 62
+
+ Total Simulation Time: 22.8594 sec
+
+ Current Memory Usage: 5173.93 Meg
+
+Thu Oct 11 20:55:25 2018
+

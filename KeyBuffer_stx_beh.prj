@@ -1,0 +1,3 @@
+vhdl isim_temp "REGISTER_D_R.vhd"
+vhdl isim_temp "KeyBufferControl.vhd"
+vhdl isim_temp "KeyBuffer.vhd"

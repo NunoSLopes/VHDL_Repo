@@ -1,0 +1,102 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+FDCPE_INPORT_0: FDCPE port map (INPORT_0,U0/cableKtoD(0),INPORT_0_C,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INPORT_0_C <= (U0/U1/U1/CS_FSM_FFd3 AND NOT U0/U1/U1/CS_FSM_FFd2);
+</td></tr><tr><td>
+FDCPE_INPORT_1: FDCPE port map (INPORT_1,U0/cableKtoD(1),INPORT_1_C,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INPORT_1_C <= (U0/U1/U1/CS_FSM_FFd3 AND NOT U0/U1/U1/CS_FSM_FFd2);
+</td></tr><tr><td>
+FDCPE_INPORT_2: FDCPE port map (INPORT_2,U0/cableKtoD(2),INPORT_2_C,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INPORT_2_C <= (U0/U1/U1/CS_FSM_FFd3 AND NOT U0/U1/U1/CS_FSM_FFd2);
+</td></tr><tr><td>
+FDCPE_INPORT_3: FDCPE port map (INPORT_3,U0/cableKtoD(3),INPORT_3_C,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INPORT_3_C <= (U0/U1/U1/CS_FSM_FFd3 AND NOT U0/U1/U1/CS_FSM_FFd2);
+</td></tr><tr><td>
+</td></tr><tr><td>
+INPORT_4 <= ((U0/U1/U1/CS_FSM_FFd3 AND U0/U1/U1/CS_FSM_FFd2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (U0/U1/U1/CS_FSM_FFd2 AND NOT U0/U1/U1/CS_FSM_FFd1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+J2_10 <= NOT ((U0/cableKtoD(2) AND NOT U0/cableKtoD(3)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+J2_11 <= NOT ((NOT U0/cableKtoD(2) AND NOT U0/cableKtoD(3)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+J2_9 <= NOT ((NOT U0/cableKtoD(2) AND U0/cableKtoD(3)));
+</td></tr><tr><td>
+FDCPE_U0/U0/U1/CS_FSM_FFd1: FDCPE port map (U0/U0/U1/CS_FSM_FFd1,U0/U0/U1/CS_FSM_FFd1_D,NOT CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U0/U0/U1/CS_FSM_FFd1_D <= ((U0/U1/U1/CS_FSM_FFd3 AND U0/U0/U1/CS_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	U0/U1/U1/CS_FSM_FFd2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (U0/cableKtoD(1) AND U0/cableKtoD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	U0/U0/U1/CS_FSM_FFd1 AND NOT J2_12)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (U0/cableKtoD(1) AND NOT U0/cableKtoD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	U0/U0/U1/CS_FSM_FFd1 AND NOT J2_13)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT U0/cableKtoD(1) AND U0/cableKtoD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	U0/U0/U1/CS_FSM_FFd1 AND NOT J2_14)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT U0/cableKtoD(1) AND NOT U0/cableKtoD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	U0/U0/U1/CS_FSM_FFd1 AND NOT J2_15));
+</td></tr><tr><td>
+FDCPE_U0/U0/U1/CS_FSM_FFd2: FDCPE port map (U0/U0/U1/CS_FSM_FFd2,U0/U0/U1/CS_FSM_FFd2_D,NOT CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U0/U0/U1/CS_FSM_FFd2_D <= ((U0/U1/U1/CS_FSM_FFd3 AND U0/U0/U1/CS_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	U0/U1/U1/CS_FSM_FFd2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (U0/U0/U1/CS_FSM_FFd2 AND NOT U0/U0/U1/CS_FSM_FFd1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (U0/cableKtoD(1) AND U0/cableKtoD(0) AND NOT J2_12)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (U0/cableKtoD(1) AND NOT U0/cableKtoD(0) AND NOT J2_13)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT U0/cableKtoD(1) AND U0/cableKtoD(0) AND NOT J2_14)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT U0/cableKtoD(1) AND NOT U0/cableKtoD(0) AND NOT J2_15));
+</td></tr><tr><td>
+FDCPE_U0/U1/U1/CS_FSM_FFd1: FDCPE port map (U0/U1/U1/CS_FSM_FFd1,U0/U1/U1/CS_FSM_FFd1_D,CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U0/U1/U1/CS_FSM_FFd1_D <= ((OUTPORT_0 AND U0/U1/U1/CS_FSM_FFd1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT U0/U1/U1/CS_FSM_FFd3 AND U0/U1/U1/CS_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OUTPORT_0));
+</td></tr><tr><td>
+FDCPE_U0/U1/U1/CS_FSM_FFd2: FDCPE port map (U0/U1/U1/CS_FSM_FFd2,U0/U1/U1/CS_FSM_FFd2_D,CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U0/U1/U1/CS_FSM_FFd2_D <= ((NOT U0/U1/U1/CS_FSM_FFd3 AND NOT U0/U1/U1/CS_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT U0/U1/U1/CS_FSM_FFd1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT U0/U1/U1/CS_FSM_FFd3 AND NOT OUTPORT_0 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	U0/U1/U1/CS_FSM_FFd1));
+</td></tr><tr><td>
+FDCPE_U0/U1/U1/CS_FSM_FFd3: FDCPE port map (U0/U1/U1/CS_FSM_FFd3,U0/U1/U1/CS_FSM_FFd3_D,CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U0/U1/U1/CS_FSM_FFd3_D <= ((U0/U1/U1/CS_FSM_FFd3 AND NOT U0/U1/U1/CS_FSM_FFd2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (U0/U1/U1/CS_FSM_FFd3 AND U0/U0/U1/CS_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT U0/U0/U1/CS_FSM_FFd1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (U0/U0/U1/CS_FSM_FFd2 AND NOT U0/U1/U1/CS_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT U0/U0/U1/CS_FSM_FFd1));
+</td></tr><tr><td>
+FTCPE_U0/cableKtoD0: FTCPE port map (U0/cableKtoD(0),U0/U0/U1/CS_FSM_FFd2,CLK,RST,'0');
+</td></tr><tr><td>
+FTCPE_U0/cableKtoD1: FTCPE port map (U0/cableKtoD(1),U0/cableKtoD_T(1),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U0/cableKtoD_T(1) <= (NOT U0/U0/U1/CS_FSM_FFd2 AND U0/cableKtoD(0));
+</td></tr><tr><td>
+FTCPE_U0/cableKtoD2: FTCPE port map (U0/cableKtoD(2),U0/cableKtoD_T(2),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U0/cableKtoD_T(2) <= ((U0/cableKtoD(1) AND U0/cableKtoD(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT U0/U0/U1/CS_FSM_FFd2 AND U0/cableKtoD(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (U0/cableKtoD(1) AND NOT U0/U0/U1/CS_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	U0/cableKtoD(0) AND NOT U0/cableKtoD(3)));
+</td></tr><tr><td>
+FTCPE_U0/cableKtoD3: FTCPE port map (U0/cableKtoD(3),U0/cableKtoD_T(3),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U0/cableKtoD_T(3) <= ((U0/cableKtoD(1) AND U0/cableKtoD(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT U0/U0/U1/CS_FSM_FFd2 AND U0/cableKtoD(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (U0/cableKtoD(1) AND NOT U0/U0/U1/CS_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	U0/cableKtoD(0) AND U0/cableKtoD(3)));
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>
