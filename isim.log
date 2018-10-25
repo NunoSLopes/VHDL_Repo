@@ -1,5 +1,5 @@
 ISim log file
-Running: D:\LIC\Project\KeyBufferControl_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/LIC/Project/KeyBufferControl_isim_beh.wdb 
+Running: D:\LIC\Project\ParityCheck_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/LIC/Project/ParityCheck_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 ----------------------------------------------------------------------
 INFO:Security:61 - The XILINXD_LICENSE_FILE environment variable is not set.
@@ -26,31 +26,17 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# isim force add /keybuffercontrol/rst 1 -radix bin
-# run 1.00us
-# show driver /keybuffercontrol/rst
-/keybuffercontrol/rst has no drivers.
-# isim force add /keybuffercontrol/clk 0 -radix bin -value 1 -radix bin -time 50 ns -repeat 100 ns
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# isim force add /keybuffercontrol/rst 0 -radix bin
-# isim force add /keybuffercontrol/dav 1 -radix bin
-# isim force add /keybuffercontrol/rst 0 -radix bin
-# isim force add /keybuffercontrol/ack 0 -radix bin
-# run 1.00us
-# isim force add /keybuffercontrol/dav 0 -radix bin
-# run 1.00us
-# isim force add /keybuffercontrol/dav 1 -radix bin
-# run 1.00us
-# isim force add /keybuffercontrol/ack 1 -radix bin
-# run 1.00us
-# show driver /keybuffercontrol/dav
-/keybuffercontrol/dav has no drivers.
-# isim force add /keybuffercontrol/dav 0 -radix bin
-# isim force add /keybuffercontrol/ack 0 -radix bin
-# run 1.00us
+# isim force add /paritycheck/clk 0 -radix bin -value 1 -radix bin -time 500 ms -repeat 1 s
+# isim force add /paritycheck/datain 0 -radix bin -value 1 -radix bin -time 1500 ms -repeat 3 s
+# isim force add /paritycheck/init 1 -radix bin -cancel 1 s
+# isim force add /paritycheck/init 1 -radix bin -cancel 1 s
+# run 2s
+# restart
+# isim force add /paritycheck/clk 0 -radix bin -value 1 -radix bin -time 500 ms -repeat 1 s
+# isim force add /paritycheck/datain 0 -radix bin -value 1 -radix bin -time 1500 ms -repeat 3 s
+# isim force add /paritycheck/init 1 -radix bin
+# run 1s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /paritycheck/init 0 -radix bin
+# run 10s

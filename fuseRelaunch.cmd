@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "D:/LIC/Project/KeyBufferControl_isim_beh.exe" -prj "D:/LIC/Project/KeyBufferControl_beh.prj" "work.KeyBufferControl" 
+-intstyle "ise" -incremental -o "D:/LIC/Project/ParityCheck_isim_beh.exe" -prj "D:/LIC/Project/ParityCheck_beh.prj" "work.ParityCheck" 

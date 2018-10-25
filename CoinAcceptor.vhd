@@ -47,13 +47,13 @@ component REGISTER_D_R is
 			  );
 end component;
 
-entity ADDER4BITS is
+component ADDER4BITS is
 Port ( A : in  STD_LOGIC_VECTOR (3 downto 0);
        B : in  STD_LOGIC_VECTOR (3 downto 0);
        Cin : in  STD_LOGIC;
        S : out  STD_LOGIC_VECTOR (3 downto 0);
        Cout : out  STD_LOGIC);
-end ADDER4BITS;
+end component;
 
 component KeyboardReader is
     Port ( clk : in  STD_LOGIC;

@@ -1,0 +1,30 @@
+Command line:
+   ParityCheck_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64634
+
+Thu Oct 25 21:45:54 2018
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5173.93 Meg
+
+ Total Signals          : 10
+ Total Nets             : 6
+ Total Signal Drivers   : 3
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 3
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 366
+Total Line Count : 5
+Total Line Count : 5
+
+ Total Simulation Time: 0.171875 sec
+
+ Current Memory Usage: 5173.93 Meg
+
+Thu Oct 25 21:59:55 2018
+

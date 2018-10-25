@@ -15,3 +15,10 @@ ngdbuild -intstyle ise -dd _ngo -uc D:/LIC/uLICX_v17.1.ucf -p xc95144xl-TQ100-10
 cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper KeyboardReader_Wrapper.ngd 
 tsim -intstyle ise KeyboardReader_Wrapper KeyboardReader_Wrapper.nga 
 hprep6 -s IEEE1149 -n KeyboardReader_Wrapper -i KeyboardReader_Wrapper 
+xst -intstyle ise -ifn "D:/LIC/Project/KeyboardReader_Wrapper.xst" -ofn "D:/LIC/Project/KeyboardReader_Wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc D:/LIC/uLICX_v17.1.ucf -p xc95144xl-TQ100-10 KeyboardReader_Wrapper.ngc KeyboardReader_Wrapper.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper KeyboardReader_Wrapper.ngd 
+XSLTProcess KeyboardReader_Wrapper_build.xml 
+tsim -intstyle ise KeyboardReader_Wrapper KeyboardReader_Wrapper.nga 
+taengine -intstyle ise -f KeyboardReader_Wrapper -w --format html1 -l KeyboardReader_Wrapper_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n KeyboardReader_Wrapper -i KeyboardReader_Wrapper 

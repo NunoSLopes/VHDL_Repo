@@ -12,13 +12,13 @@
          <ClosedNode>/KeyboardReader_Wrapper - Structural D:|LIC|Project|KeyboardReader_Wrapper.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>adder8bits - Behavioral (D:/LIC/Project/adder8bits.vhd)</SelectedItem>
+         <SelectedItem>KeyboardReader_Wrapper - Structural (D:/LIC/Project/KeyboardReader_Wrapper.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001c4000000020000000000000000000000000200000064ffffffff000000810000000300000002000001c40000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>adder8bits - Behavioral (D:/LIC/Project/adder8bits.vhd)</CurrentItem>
+      <CurrentItem>KeyboardReader_Wrapper - Structural (D:/LIC/Project/KeyboardReader_Wrapper.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -26,13 +26,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -80,6 +80,7 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/ADDER4BIT - Stuctural D:|LIC|Project|ADDER4BITS.vhd</ClosedNode>
          <ClosedNode>/ADDER4BIT - Stuctural E:|LIC|Project|ADDER4BIT.vhd</ClosedNode>
+         <ClosedNode>/ADDER4BITS - Stuctural D:|LIC|Project|ADDER4BITS.vhd</ClosedNode>
          <ClosedNode>/Count - Stuctural E:|LIC|Project|Count.vhd/U1 - ADDER4BIT - Stuctural</ClosedNode>
          <ClosedNode>/Counter - Stuctural E:|LIC|Project|Count.vhd</ClosedNode>
          <ClosedNode>/Counter - Stuctural E:|LIC|Project|Count.vhd/U1 - ADDER4BIT - Stuctural</ClosedNode>
@@ -96,17 +97,18 @@
          <ClosedNode>/KeyScan - Structural E:|LIC|Project|KeyScan.vhd/U0 - Counter - Stuctural</ClosedNode>
          <ClosedNode>/KeyboardReader - Structural D:|LIC|Project|KeyboardReader.vhd/U0 - KeyDecoder - Stuctural/U0 - KeyScan - Structural/U0 - Counter - Stuctural/U0 - ADDER4BIT - Stuctural</ClosedNode>
          <ClosedNode>/KeyboardReader - Structural D:|LIC|Project|KeyboardReader.vhd/U1 - KeyBuffer - Structural</ClosedNode>
-         <ClosedNode>/KeyboardReader_Wrapper - Structural D:|LIC|Project|KeyboardReader_Wrapper.vhd/U0 - KeyboardReader - Structural/U0 - KeyDecoder - Stuctural</ClosedNode>
+         <ClosedNode>/KeyboardReader_Wrapper - Structural D:|LIC|Project|KeyboardReader_Wrapper.vhd/U0 - KeyboardReader - Structural/U0 - KeyDecoder - Stuctural/U0 - KeyScan - Structural/U0 - Counter - Stuctural</ClosedNode>
+         <ClosedNode>/KeyboardReader_Wrapper - Structural D:|LIC|Project|KeyboardReader_Wrapper.vhd/U0 - KeyboardReader - Structural/U1 - KeyBuffer - Structural</ClosedNode>
          <ClosedNode>/adder8bits - Stuctural D:|LIC|Project|adder8bits.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>U0 - REGISTER_D_R - Behavioral (D:/LIC/Project/REGISTER_D_R.vhd)</SelectedItem>
+         <SelectedItem>U0 - Counter - Stuctural (D:/LIC/Project/Count.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001b4000000020000000000000000000000000200000064ffffffff000000810000000300000002000001b40000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>U0 - REGISTER_D_R - Behavioral (D:/LIC/Project/REGISTER_D_R.vhd)</CurrentItem>
+      <CurrentItem>U0 - Counter - Stuctural (D:/LIC/Project/Count.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>

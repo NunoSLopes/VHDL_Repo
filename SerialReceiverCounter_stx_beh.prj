@@ -1,0 +1,4 @@
+vhdl isim_temp "FA.vhd"
+vhdl isim_temp "REGISTER_D_R.vhd"
+vhdl isim_temp "ADDER4BIT.vhd"
+vhdl isim_temp "SerialReceiverCounter.vhd"
